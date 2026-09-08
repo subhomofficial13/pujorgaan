@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="bn">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1,viewport-fit=cover"
+  />
+
+  <meta
+    name="theme-color"
+    content="#120907"
+  />
+
+  <title>পূজো আসছে · PujoAschhe</title>
+
+  <!-- Maa Durga favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="favicon.svg"
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+  <main class="page">
+
+
+    <!-- =====================================================
+         COUNTDOWN
+         ===================================================== -->
+
+    <section
+      class="countdown"
+      aria-label="Countdown to Mahalaya"
+    >
+
+      <div class="countdown-heading">
+
+        <div class="kicker">
+          শারদ উৎসবের কাউন্টডাউন
+        </div>
+
+        <div class="subline">
+          The wait for Pujo begins here
+        </div>
+
+      </div>
+
+
+      <!-- PUJO TAGLINE -->
+
+      <div class="pujor-tagline">
+
+        <p>
+          Feel the OG Pujor Gaan with your friends, family &amp; special ones.
+        </p>
+
+        <span>
+          Because Pujo feels better with friends, family &amp; someone special. ❤️
+        </span>
+
+      </div>
+
+
+      <!-- DATE -->
+
+      <div class="date-line">
+
+        <span>
+          মহালয়া
+        </span>
+
+        <i></i>
+
+        <span>
+          ১০ অক্টোবর ২০২৬
+        </span>
+
+      </div>
+
+
+      <!-- COUNTDOWN TIMER -->
+
+      <div class="timer">
+
+
+        <div class="unit">
+
+          <strong id="days">
+            00
+          </strong>
+
+          <span>
+            DAYS
+          </span>
+
+        </div>
+
+
+        <div class="divider">
+          :
+        </div>
+
+
+        <div class="unit">
+
+          <strong id="hours">
+            00
+          </strong>
+
+          <span>
+            HOURS
+          </span>
+
+        </div>
+
+
+        <div class="divider">
+          :
+        </div>
+
+
+        <div class="unit">
+
+          <strong id="mins">
+            00
+          </strong>
+
+          <span>
+            MINUTES
+          </span>
+
+        </div>
+
+
+        <div class="divider">
+          :
+        </div>
+
+
+        <div class="unit">
+
+          <strong id="secs">
+            00
+          </strong>
+
+          <span>
+            SECONDS
+          </span>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="countdown-caption">
+        আর কটা দিন… তারপর ঢাকে কাঠি পড়বে।
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MUSIC PLAYER
+         ===================================================== -->
+
+    <section
+      class="music-card"
+      aria-label="Pujo music player"
+    >
+
+
+      <!-- TABS -->
+
+      <div
+        class="tabs"
+        role="tablist"
+      >
+
+
+        <button
+          class="tab active"
+          id="tab-pujor"
+          role="tab"
+          aria-selected="true"
+          data-group="pujorGaan"
+        >
+
+          <span class="tab-icon">
+            ♫
+          </span>
+
+          <span>
+            পুজোর গান
+          </span>
+
+          <small>
+            25
+          </small>
+
+        </button>
+
+
+        <button
+          class="tab"
+          id="tab-mahalaya"
+          role="tab"
+          aria-selected="false"
+          data-group="mahalayaSpecial"
+        >
+
+          <span class="tab-icon">
+            ◉
+          </span>
+
+          <span>
+            মহালয়া স্পেশাল
+          </span>
+
+          <small>
+            7
+          </small>
+
+        </button>
+
+
+      </div>
+
+
+
+      <!-- NOW PLAYING -->
+
+      <div class="now-playing">
+
+
+        <div
+          class="art"
+          id="art"
+        >
+
+          <span>
+            ♫
+          </span>
+
+        </div>
+
+
+        <div class="track-copy">
+
+
+          <div
+            class="collection"
+            id="collection"
+          >
+            PUJOR GAAN
+          </div>
+
+
+          <div
+            class="track-title"
+            id="title"
+          >
+            Loading music…
+          </div>
+
+
+          <div
+            class="track-meta"
+            id="meta"
+          >
+            YouTube audio · 01 / 25
+          </div>
+
+
+        </div>
+
+
+        <!-- PLAYER CONTROLS -->
+
+        <div class="player-actions">
+
+
+          <button
+            class="circle-btn"
+            id="prev"
+            aria-label="Previous track"
+          >
+            ⏮
+          </button>
+
+
+          <button
+            class="main-play"
+            id="play"
+            aria-label="Play"
+          >
+            ▶
+          </button>
+
+
+          <button
+            class="circle-btn"
+            id="next"
+            aria-label="Next track"
+          >
+            ⏭
+          </button>
+
+
+        </div>
+
+
+      </div>
+
+
+
+      <!-- PROGRESS -->
+
+      <div class="seek-row">
+
+
+        <span id="currentTime">
+          0:00
+        </span>
+
+
+        <input
+          class="progress"
+          id="progress"
+          type="range"
+          min="0"
+          max="100"
+          value="0"
+          step="0.1"
+          aria-label="Seek track"
+        >
+
+
+        <span id="duration">
+          0:00
+        </span>
+
+
+      </div>
+
+
+
+      <!-- BOTTOM -->
+
+      <div class="bottom-row">
+
+
+        <span class="status">
+
+          <i></i>
+
+          YOUTUBE AUDIO
+
+        </span>
+
+
+        <div class="volume-wrap">
+
+
+          <button
+            class="volume-btn"
+            id="mute"
+            aria-label="Mute"
+          >
+            🔊
+          </button>
+
+
+          <input
+            class="volume"
+            id="volume"
+            type="range"
+            min="0"
+            max="100"
+            value="75"
+            aria-label="Volume"
+          >
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer>
+      © 2026 · @pujoaschhe-subhom
+    </footer>
+
+
+  </main>
+
+
+
+  <!-- =====================================================
+       HIDDEN YOUTUBE PLAYER
+       ===================================================== -->
+
+  <div
+    id="yt"
+    aria-hidden="true"
+  ></div>
+
+
+
+  <!-- =====================================================
+       SCRIPTS
+       ===================================================== -->
+
+  <script src="https://www.youtube.com/iframe_api"></script>
+
+  <script src="tracks.js"></script>
+
+  <script
+    src="script.js"
+    defer
+  ></script>
+
+
+</body>
+
+</html>
